@@ -1,0 +1,16 @@
+name: Scholarly / editorial question
+description: A question requiring research before any code change
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / what you already checked
+    validations:
+      required: false

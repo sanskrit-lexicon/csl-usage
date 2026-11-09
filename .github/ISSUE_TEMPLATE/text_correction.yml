@@ -1,0 +1,29 @@
+name: Text correction
+description: A correction to dictionary text (headword, definition, markup)
+labels: ["text-correction"]
+body:
+  - type: input
+    id: dict
+    attributes:
+      label: Dictionary code (e.g. MW, PWG, GRA)
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Line number / entry
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Current text -> corrected text
+      description: Quote the current line and the proposed replacement.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source justification (scan page, printed edition, secondary source)
+    validations:
+      required: false
