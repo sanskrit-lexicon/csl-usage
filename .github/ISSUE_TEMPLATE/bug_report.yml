@@ -1,0 +1,17 @@
+name: Bug report
+description: Broken link, XML structure error, or broken download file
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What's broken
+      description: What you expected vs what happened, with a URL or file path.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location (dictionary code / file / line)
+    validations:
+      required: false
