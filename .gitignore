@@ -1,0 +1,12 @@
+# Raw query data NEVER enters this repo (ADR-0001): raw strings may contain personal data.
+raw/
+data/raw/
+*.log
+access.log*
+query_log*
+*.sqlite
+*.sqlite3
+
+# Regenerable bulk outputs stay local
+data/cache/
+.DS_Store
