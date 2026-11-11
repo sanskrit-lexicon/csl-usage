@@ -10,3 +10,12 @@ query_log*
 # Regenerable bulk outputs stay local
 data/cache/
 .DS_Store
+
+# Raw query dumps under natural export names (bughunt 10-11-2026: these were
+# committable despite hard rule 1 — queries.*/lookups.* are raw-shaped; real
+# aggregates use top_keys/top_misses-style names per design docs).
+queries.*
+query_export*
+session_export*
+lookups.*
+dump.sql
